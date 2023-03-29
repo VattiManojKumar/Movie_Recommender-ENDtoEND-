@@ -61,6 +61,8 @@ df['movie_title']=df['movie_title'].str.lower()
 
 df.head()
 
+df.to_csv('data.csv')
+
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
